@@ -1,5 +1,5 @@
 {
-  "name": "draft-js-lan9",
+  "name": "@lan9/draft-js",
   "description": "A fork of a React framework for building text editors.",
   "version": "0.10.5",
   "keywords": [
@@ -30,6 +30,9 @@
     "flow": "flow src",
     "test": "cross-env NODE_ENV=test jest",
     "test-ci": "cross-env NODE_ENV=test npm run lint && npm run flow && npm run test"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
   },
   "dependencies": {
     "fbjs": "^0.8.15",

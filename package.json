@@ -1,6 +1,6 @@
 {
   "name": "draft-js-lan9",
-  "description": "A React framework for building text editors.",
+  "description": "A fork of a React framework for building text editors.",
   "version": "0.10.5",
   "keywords": [
     "draftjs",
@@ -8,8 +8,7 @@
     "react",
     "richtext"
   ],
-  "homepage": "http://draftjs.org/",
-  "bugs": "https://github.com/facebook/draft-js/issues",
+  "bugs": "https://github.com/lan9/draft-js/issues",
   "files": [
     "dist/",
     "lib/",
@@ -18,7 +17,7 @@
   ],
   "main": "lib/Draft.js",
   "style": "dist/Draft.css",
-  "repository": "facebook/draft-js",
+  "repository": "lan9/draft-js",
   "license": "BSD-3-Clause",
   "scripts": {
     "prepublish": "npm run build",

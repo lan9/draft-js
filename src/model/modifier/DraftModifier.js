@@ -210,7 +210,7 @@ var DraftModifier = {
     contentState: ContentState,
     selectionState: SelectionState,
     inlineStyle: string,
-    allowUndo: boolean,
+    allowUndo?: boolean,
   ): ContentState {
     return ContentStateInlineStyle.add(
       contentState,
@@ -224,7 +224,7 @@ var DraftModifier = {
     contentState: ContentState,
     selectionState: SelectionState,
     inlineStyle: string,
-    allowUndo, boolean
+    allowUndo?: boolean
   ): ContentState {
     return ContentStateInlineStyle.remove(
       contentState,

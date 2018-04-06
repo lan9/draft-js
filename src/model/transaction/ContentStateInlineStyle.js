@@ -24,7 +24,7 @@ var ContentStateInlineStyle = {
     contentState: ContentState,
     selectionState: SelectionState,
     inlineStyle: string,
-    allowUndo: boolean
+    allowUndo?: boolean
   ): ContentState {
     return modifyInlineStyle(contentState, selectionState, inlineStyle, true, allowUndo);
   },
@@ -33,7 +33,7 @@ var ContentStateInlineStyle = {
     contentState: ContentState,
     selectionState: SelectionState,
     inlineStyle: string,
-    allowUndo,
+    allowUndo?: boolean,
   ): ContentState {
     return modifyInlineStyle(contentState, selectionState, inlineStyle, false, allowUndo);
   },
@@ -44,7 +44,7 @@ function modifyInlineStyle(
   selectionState: SelectionState,
   inlineStyle: string,
   addOrRemove: boolean,
-  allowUndo: boolean
+  allowUndo?: boolean
 ): ContentState {
   var blockMap = contentState.getBlockMap();
   var startKey = selectionState.getStartKey();
